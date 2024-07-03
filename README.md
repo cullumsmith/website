@@ -1,8 +1,8 @@
-[www.sacredheartsc.com](https://www.sacredheartsc.com/)
-=========================
+sacredheartsc.com
+=================
 
 This repository contains the source for [www.sacredheartsc.com](https://www.sacredheartsc.com).
-It consists of Markdown files and a custom static site generator build using pandoc and BSD `make(1)`.
+It consists of Markdown files and a custom static site generator build using pandoc and BSD make.
 
 # Requirements
 
