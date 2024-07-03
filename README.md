@@ -15,7 +15,7 @@ It consists of Markdown files and a custom static site generator using pandoc an
 
 First, install the `pip` requirements:
 
-    make install
+    make deps
 
 You'll want to edit the [Makefile](Makefile) to set your site URL,
 RSS feed title, etc.

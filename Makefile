@@ -101,8 +101,8 @@ ${OUTPUT_MARKDOWN}: ${@:${HTML2SOURCE}} ${TEMPLATE}
 ${OUTPUT_STATIC}: ${@:${OUTPUT2SOURCE}}
 	${COPY} ${@:${OUTPUT2SOURCE}} $@
 
-.PHONY: install serve rsync clean
-install:
+.PHONY: deps serve rsync clean
+deps:
 	pip install -r requirements.txt
 
 serve: public
