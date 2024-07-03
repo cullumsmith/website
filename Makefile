@@ -6,6 +6,7 @@ FEED_TITLE         = Cullum Smith's Blog
 FEED_DESCRIPTION   = Dad, southerner, unix wrangler, banjo enjoyer
 STATIC_REGEX       = .*\.(html|css|jpg|jpeg|png|ico|xml|txt|asc|webmanifest)
 RECENT_POSTS_LIMIT = 5
+HIGHLIGHT_STYLE    = kate
 
 
 ### VARIABLES ######################
@@ -53,23 +54,11 @@ OUTPUT_RSS        := ${OUTPUT_DIR}/${BLOG_RSS_FILE}
 
 
 ### BUILD COMMANDS ######################
-COPY = cp -p
-
-PANDOC := pandoc \
-  --highlight-style=kate \
-  --metadata=feed:/${BLOG_RSS_FILE} \
-  --defaults=${DEFAULTS}
-
-GENERATE_RSS := ${BLOG_RSS_SCRIPT} \
-  ${SOURCE_DIR}/${BLOG_DIR} \
-	--title=${FEED_TITLE:Q} \
-	--description=${FEED_DESCRIPTION:Q} \
-	--url=${URL:Q} \
-  --blog-path=/${BLOG_DIR} \
-  --feed-path=/${BLOG_RSS_FILE}
-
-GENERATE_BLOGLIST   := ${BLOG_LIST_SCRIPT} ${SOURCE_DIR}/${BLOG_DIR}
-INTERPOLATE_BLOGLIST = sed -e '/${BLOG_LIST_REPLACE}/{r ${BLOGLIST_HTML}' -e 'd;}'
+COPY                  = cp -p
+PANDOC               := pandoc --highlight-style=${HIGHLIGHT_STYLE} --metadata=feed:/${BLOG_RSS_FILE} --defaults=${DEFAULTS}
+GENERATE_RSS         := ${BLOG_RSS_SCRIPT} ${SOURCE_DIR}/${BLOG_DIR} --title=${FEED_TITLE:Q} --description=${FEED_DESCRIPTION:Q} --url=${URL:Q} --blog-path=/${BLOG_DIR} --feed-path=/${BLOG_RSS_FILE}
+GENERATE_BLOGLIST    := ${BLOG_LIST_SCRIPT} ${SOURCE_DIR}/${BLOG_DIR}
+INTERPOLATE_BLOGLIST  = sed -e '/${BLOG_LIST_REPLACE}/{r ${BLOGLIST_HTML}' -e 'd;}'
 
 
 ### TARGETS ######################
