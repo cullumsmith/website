@@ -24,8 +24,7 @@ I'm an Site Reliability Engineer located in South Carolina. Welcome to my person
 - Big Tech: [X](https://x.com/CullumSmith) |
             [GitHub](https://github.com/cullumsmith) |
             [LinkedIn](https://www.linkedin.com/in/cullumsmith/) |
-            [Facebook](https://www.facebook.com/CullumSmith01) |
-            [Instagram](https://www.instagram.com/cullumsmith01/)
+            [Facebook](https://www.facebook.com/CullumSmith01)
 - GPG: [0x5CAF6291](/gpg.asc)
 
 ## Links
