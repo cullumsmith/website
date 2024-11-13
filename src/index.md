@@ -1,11 +1,11 @@
 ---
 title: "Cullum Smith: Homepage"
 heading: Cullum Smith's Homepage
-subtitle: Cor Jesu Sacratissimum, miserere nobis
+subtitle: Benedictus Deus! Benedictum Nomen Sanctum ejus.
 description: "Personal website of Cullum Smith: dad, southerner, unix wrangler, banjo enjoyer"
 ---
 
-I'm an Site Reliability Engineer located in South Carolina. Welcome to my personal website.
+I'm a computer person located in South Carolina. Welcome to my humble website.
 
 ## About Me
 ![](me.jpg "Cullum Smith"){.logo}
@@ -15,7 +15,7 @@ I'm an Site Reliability Engineer located in South Carolina. Welcome to my person
 - Unix wrangler
 - Gregorian chant & banjo enjoyer
 - Southerner
-- SRE (*i.e.* sysadmin who knows how to code)
+- Half sysadmin, half programmer
 
 ## Contact
 - Email: [cullum@sacredheartsc.com](mailto:cullum@sacredheartsc.com)
