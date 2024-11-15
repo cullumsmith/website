@@ -55,6 +55,7 @@ footer {
 
 .logo {
   float: right;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -65,7 +66,7 @@ footer {
 
 @media only screen and (max-device-width : 667px) {
   .logo {
-    max-width: 66px;
+    max-width: 88px;
   }
 
   footer .date {

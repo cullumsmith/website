@@ -46,7 +46,7 @@ In English:
 ![](alleluia.png "Alleluia: Stabat sancta Maria"){.center}
 
 Long, descending scales are a unique motif of this particular chant, which I have
-highlighted below. This melodic pattern occurs quite rarely in the Church's liturgy.
+highlighted above. This melodic pattern occurs quite rarely in the Church's liturgy.
 The descending notes call to mind the tears which fell from the eyes of our Blessed
 Mother at the foot of the cross.
 

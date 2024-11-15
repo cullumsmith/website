@@ -4,7 +4,7 @@ date: May 25, 2023
 description: Take control of your telephony with Asterisk!
 ---
 
-I've always been a big [self-hoster](https://github.com/sacredheartsc/selfhosted),
+I've always been a big [self-hoster](https://git.sacredheartsc.com/infrastructure/),
 but had never attempted anything related to VoIP. I recently purchased some IP
 phones and set up a personal home phone network using [Asterisk](https://www.asterisk.org/).
 This guide will help you set up your own digital telephone system using
@@ -985,7 +985,3 @@ your network is congested.
 In addition, you may want to investigate encrypting your calls via STRP and SIP
 TLS. I don't personally do this, because voice calls are totally in the clear as
 soon as you connect to the PSTN anyway.
-
-If you'd like to check out the configs required for encrypting your calls, or if
-you just want to get some ideas for automating your Asterisk configuration,
-check out my Ansible role on [GitHub](https://github.com/sacredheartsc/selfhosted/tree/master/roles/asterisk).

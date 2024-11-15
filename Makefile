@@ -6,7 +6,7 @@ FEED_TITLE         = Cullum Smith's Blog
 FEED_DESCRIPTION   = Dad, southerner, unix wrangler, banjo enjoyer
 STATIC_REGEX       = .*\.(html|css|jpg|jpeg|png|ico|xml|txt|asc|webmanifest)
 RECENT_POSTS_LIMIT = 5
-HIGHLIGHT_STYLE    = kate
+HIGHLIGHT_STYLE    = pygments
 
 
 ### VARIABLES ######################
