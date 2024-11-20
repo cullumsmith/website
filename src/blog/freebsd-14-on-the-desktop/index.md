@@ -1,7 +1,7 @@
 ---
 title: FreeBSD 14 on the Desktop
 date: November 20, 2024
-description: KDE 5 on a real Unix!
+description: KDE 5 on your laptop, using a real Unix!
 ---
 
 After [much deliberation](../reevaluating-rhel/), I finally decided to migrate my entire
@@ -19,6 +19,9 @@ ensnared by the YAML tarpit, is not **yet** at our gates (*sic transit gloria mu
 
 Anyway, let's build a FreeBSD desktop system with KDE. This guide will assume you're using
 Intel graphics with X11 (don't @ me about Wayland 🤡).
+
+On my 5-year-old ThinkPad X1 Carbon, I'm getting about 6-7 hours of battery life
+with FreeBSD. Not too bad!
 
 ![](kde5.jpg "KDE Plasma 5 on FreeBSD"){.center}
 
