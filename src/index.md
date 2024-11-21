@@ -2,7 +2,7 @@
 title: "Cullum Smith: Homepage"
 heading: Cullum Smith's Homepage
 subtitle: Benedictus Deus! Benedictum Nomen Sanctum ejus.
-description: "Personal website of Cullum Smith: dad, southerner, unix wrangler, banjo enjoyer"
+description: "Unix wrangler, Gregorian chant and banjo enjoyer"
 ---
 
 I'm a computer person located in South Carolina. Welcome to my humble website.
