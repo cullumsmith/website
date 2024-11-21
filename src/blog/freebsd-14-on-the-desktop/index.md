@@ -412,62 +412,6 @@ Add the following to `/etc/rc.local`:
 usbconfig | awk -F: '{ print $1 }' | xargs -rtn1 -I% usbconfig -d % power_save
 ```
 
-### Suspend on Lid Close
-
-For laptops, you'll need a `devd` rule to automatically suspend when the lid is
-closed. Create `/etc/devd/lid-close.conf` with the following:
-
-```
-# /etc/devd/lid-close.conf
-
-notify 20 {
-  match "system"    "ACPI";
-  match "subsystem" "Lid";
-  match "notify"    "0x00";
-  action            "/usr/local/libexec/kde-lock-and-suspend";
-};
-
-```
-
-On FreeBSD, you can enter sleep mode by running `acpiconf -s3`. But if we're
-logged into a desktop session, we'd like to make sure our screen is locked first.
-
-Long ago, in a more sensible time, we'd just run `pkill -USR1 xidle` to lock the
-screen. Sadly, KDE requires that we enter the teenage wasteland of D-Bus to accomplish
-this.
-
-Create `/usr/local/libexec/kde-lock-and-suspend` like so:
-
-```bash
-#!/bin/sh
-
-# /usr/local/libexec/kde-lock-and-suspend
-
-# For any active KDE session, lock the screen via dbus.
-/usr/local/bin/qdbus-qt5 --literal --system        \
-    org.freedesktop.ConsoleKit                     \
-    /org/freedesktop/ConsoleKit/Manager            \
-    org.freedesktop.ConsoleKit.Manager.GetSessions \
-  | /usr/bin/sed 's/^.*\(Session[0-9]*\).*$/\1/'   \
-  | /usr/bin/xargs -rtn1 -I%                       \
-      /usr/local/bin/qdbus-qt5 --system            \
-        org.freedesktop.ConsoleKit                 \
-        /org/freedesktop/ConsoleKit/%              \
-        org.freedesktop.ConsoleKit.Session.Lock
-
-# Give the previous command some time to complete.
-sleep 0.5
-
-# Suspend!
-/usr/sbin/acpiconf -s3
-```
-
-Don't forget to make it executable:
-
-```bash
-chmod 755 /usr/local/libexec/kde-lock-and-suspend
-```
-
 ### ThinkPad Backlight Controls
 
 I had to do a bit of work to get the backlight keys working on my ThinkPad
@@ -1044,7 +988,7 @@ hack is triggered, causing a bunch of `.nfs` files to be created.
 
 I've read that Baloo doesn't index network mounts, but apparently it does (at least on FreeBSD).
 
-You can disable Baloo entirely by creating `/usr/local/etc/xdg/baloofilerc` with the following:
+You can disable Baloo for all users by creating `/usr/local/etc/xdg/baloofilerc` with the following:
 
 ```ini
 # /usr/local/etc/xdg/baloofilerc
