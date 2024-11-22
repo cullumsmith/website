@@ -356,14 +356,14 @@ index 0, I'll enable `virtual_oss` like so:
 
 ```bash
 sysrc -v virtual_oss_enable=YES
-sysrc -v virtual_oss_dsp='-T /dev/sndstat -C 2 -c 2 -S -r 48000 -b 16 -s 25ms -O /dev/dsp1 -R /dev/dsp0 -d dsp' 
+sysrc -v virtual_oss_dsp='-T /dev/sndstat -C 2 -c 2 -S -r 48000 -b 16 -s 100ms -O /dev/dsp1 -R /dev/dsp0 -d dsp' 
 ```
 
 You'll need to set the `-r` flag to the sample rate and `-b` to the bit depth of your device
 (you can usually find these values in `dmesg`).
 If your devices have different sample rates, the `-S` flag enables automatic resampling.
 
-The `-s` flag sets the buffer size. I had to increase this to `25ms` to avoid clipping.
+The `-s` flag sets the buffer size. I had to increase this to `100ms` to avoid clipping.
 
 ### Device Permissions via devfs
 
