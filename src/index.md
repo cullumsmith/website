@@ -20,6 +20,7 @@ I'm a computer person located in South Carolina. Welcome to my humble website.
 ## Contact
 - Email: [cullum@sacredheartsc.com](mailto:cullum@sacredheartsc.com)
 - XMPP: [cullum@sacredheartsc.com](xmpp:cullum@sacredheartsc.com?message)
+- Mastodon: <a rel="me" href="https://mastodon.bsd.cafe/@cullum">@cullum@bsd.cafe</a>
 - IRC: [cullum on libera.chat](ircs://irc.libera.chat/cullum,isnick)
 - Big Tech: [X](https://x.com/CullumSmith) |
             [GitHub](https://github.com/cullumsmith) |
