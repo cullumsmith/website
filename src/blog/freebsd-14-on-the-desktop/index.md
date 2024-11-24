@@ -792,6 +792,7 @@ pkg install \
   libva-utils \
   libvdpau-va-gl \
   merkuro \
+  plasma5-sddm-kcm \
   sddm \
   signal-desktop \
   thunderbird \
