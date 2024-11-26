@@ -356,7 +356,7 @@ index 0, I'll enable `virtual_oss` like so:
 
 ```bash
 sysrc -v virtual_oss_enable=YES
-sysrc -v virtual_oss_dsp='-T /dev/sndstat -C 2 -c 2 -S -r 48000 -b 16 -s 100ms -O /dev/dsp1 -R /dev/dsp0 -d dsp' 
+sysrc -v virtual_oss_dsp='-T /dev/sndstat -C 8 -c 8 -S -r 48000 -b 16 -s 100ms -O /dev/dsp1 -R /dev/dsp0 -d dsp' 
 ```
 
 You'll need to set the `-r` flag to the sample rate and `-b` to the bit depth of your device
@@ -364,6 +364,15 @@ You'll need to set the `-r` flag to the sample rate and `-b` to the bit depth of
 If your devices have different sample rates, the `-S` flag enables automatic resampling.
 
 The `-s` flag sets the buffer size. I had to increase this to `100ms` to avoid clipping.
+
+The `-c` and `-C` flags set the number of channels. I originally had this set to 2, but
+found that any video with surround sound had no audio. VLC printed the following error:
+
+```
+oss audio output error: cannot set 6 channels
+```
+
+Bumping this up to 8 solved the issue.
 
 ### Device Permissions via devfs
 
