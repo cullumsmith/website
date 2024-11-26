@@ -699,7 +699,7 @@ service ntpd start
 In case you didn't do this during the installation, set your timezone:
 
 ```bash
-cp -v /usr/share/zoneinfo/America/New_York /etc/localtime
+ln -sfhv /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
 
 ## Switch to openssh-portable
@@ -801,6 +801,7 @@ pkg install \
   libva-utils \
   libvdpau-va-gl \
   merkuro \
+  plasma5-sddm-kcm \
   sddm \
   signal-desktop \
   thunderbird \
