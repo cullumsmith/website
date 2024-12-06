@@ -1,7 +1,7 @@
 ### CHANGE ME ######################
 DOMAIN             = www.sacredheartsc.com
 URL                = https://${DOMAIN}
-RSYNC_TARGET       = ${DOMAIN}:/usr/local/www/${DOMAIN}
+RSYNC_TARGET       = ${DOMAIN}:/usr/local/www/vhosts/${DOMAIN}
 FEED_TITLE         = Cullum Smith's Blog
 FEED_DESCRIPTION   = Blog of a unix wrangler, Gregorian chant and banjo enjoyer
 STATIC_REGEX       = .*\.(html|css|jpg|jpeg|png|ico|xml|txt|asc|webmanifest)
