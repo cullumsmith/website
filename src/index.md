@@ -10,12 +10,10 @@ I'm a computer person located in South Carolina. Welcome to my humble website.
 ## About Me
 ![](me.jpg "Cullum Smith"){.logo}
 
-- Catholic
-- Father of four young'uns
 - Unix wrangler
 - Gregorian chant & banjo enjoyer
-- Southerner
 - Half sysadmin, half programmer
+- Dixie Catholic, four kids
 
 ## Contact
 - Email: [cullum@sacredheartsc.com](mailto:cullum@sacredheartsc.com)
