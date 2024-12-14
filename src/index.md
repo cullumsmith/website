@@ -19,6 +19,7 @@ I'm a computer person located in South Carolina. Welcome to my humble website.
 - Email: [cullum@sacredheartsc.com](mailto:cullum@sacredheartsc.com)
 - XMPP: [cullum@sacredheartsc.com](xmpp:cullum@sacredheartsc.com?message)
 - Fediverse: <a rel="me" href="https://mastodon.bsd.cafe/@cullum">@cullum@bsd.cafe</a>
+- Matrix: [@cullum:sacredheartsc.com](https://matrix.to/#/@cullum:sacredheartsc.com)
 - IRC: [cullum on libera.chat](ircs://irc.libera.chat/cullum,isnick)
 - GPG: [0x5CAF6291](/gpg.asc)
 - Big Tech: [X](https://x.com/CullumSmith) |
