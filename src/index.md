@@ -39,3 +39,7 @@ I'm a computer person located in South Carolina. Welcome to my humble website.
 ::: bloglist
 __BLOG_LIST__
 :::
+
+## Odds & Ends
+
+- [FFmpeg Cheat Sheet](/misc/ffmpeg/)

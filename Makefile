@@ -4,7 +4,7 @@ URL                = https://${DOMAIN}
 RSYNC_TARGET       = ${DOMAIN}:/usr/local/www/vhosts/${DOMAIN}
 FEED_TITLE         = Cullum Smith's Blog
 FEED_DESCRIPTION   = Blog of a unix wrangler, Gregorian chant and banjo enjoyer
-STATIC_REGEX       = .*\.(html|css|jpg|jpeg|png|ico|xml|txt|asc|webmanifest)
+STATIC_REGEX       = .*\.(html|css|jpg|jpeg|png|ico|xml|txt|asc|webmanifest|pdf)
 RECENT_POSTS_LIMIT = 5
 HIGHLIGHT_STYLE    = pygments
 
