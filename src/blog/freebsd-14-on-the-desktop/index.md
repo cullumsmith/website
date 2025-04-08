@@ -463,6 +463,8 @@ Finally, create the following script at `/usr/local/libexec/thinkpad-brightness`
 
 # /usr/local/libexec/thinkpad-brightness
 
+cur=$(/usr/bin/backlight -q)
+
 case $1 in
   up)
       if [ "$cur" -ge 50 ]; then
