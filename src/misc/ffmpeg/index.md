@@ -21,3 +21,21 @@ Crop 200px from the bottom of a video, maintaining aspect ratio:
 ```bash
 ffmpeg -i in.mp4 -filter:v 'crop=iw-200:ih-200:(iw-ow)/2:0' -c:a copy out.mp4
 ```
+
+Convert a landscape video to portrait (crop to center):
+
+```bash
+ffmpeg -i in.mp4 -filter:v 'crop=ih*9/16:ih:(iw-ow/2):0' -c:a copy out.mp4
+```
+
+Trim video using start and end timestamps:
+
+```bash
+ffmpeg -i in.mp4 -ss 00:01:00 -to 00:02:00 -c copy out.mp4
+```
+
+Scale a video down to 720p (keep aspect ratio):
+
+```bash
+ffmpeg -i in.mp4 -vf "scale=-2:720" out.mp4
+```
